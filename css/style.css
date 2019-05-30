@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#imageSlider{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+}
+
+.slideContainer{
+    position: relative;
+    transform: translateX(0);
+    width: 3000px;
+    height: 600px;
+    left: -1000px;
+    /* transition: .7s; */
+}
+
+.slideContainer::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.slide{
+    width: 1000px;
+    float: left;
+}
+
+.slide img{
+    max-width: 100%;
+}
+
+.transition {
+  transition: .7s;
+}
